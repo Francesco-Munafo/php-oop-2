@@ -6,7 +6,7 @@ class Category
 
     public function __construct(string $name)
     {
-        $this->getName($name);
+        $this->setName($name);
     }
 
     // Getters and Setters
