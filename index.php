@@ -1,4 +1,10 @@
-<?php 
+<?php
+
+require __DIR__ . '/Models/Product.php';
+require __DIR__ . '/Models/Food.php';
+require __DIR__ . '/Models/Kennel.php.php';
+require __DIR__ . '/Models/Toy.php';
+require __DIR__ . '/Database/db.php';
 
 /*
 
@@ -16,54 +22,49 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 
 */
+?>
 
-class Prodotti
-{
-public $name;
-public $discount = 0;
+<!DOCTYPE html>
+<html lang="en">
 
-public function __construct($_name, $_discount)
-{
-    $this->name = $_name;
-    $this->discount = $_discount;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
 
-}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
 
-class Food extends Prodotti
-{
 
-    public $expirationDate;
-    public $type;
-    public $weight;
+<body>
+    <header class="d-flex justify-content-center bg-warning">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
 
-    public function __construct($_name, $_discount, $expirationDate, $type, $weight)
-    {
-        parent::__construct($_name, $_discount);
-        $this->expirationDate = $expirationDate;
-        $this->type = $type; // carne, croccantini ecc.
-        $this->weight = $weight; //peso del contenuto
-}
+                <div class="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
 
-}
 
-class Toys extends Prodotti
-{
-    public $material;
 
-    public function __construct($_name, $_discount, $_material)
-    {
-        parent::__construct($_name, $_discount);
-        $this->material = $_material;
-    }
-}
+    </main>
+    <footer>
 
-class Kennels extends Prodotti
-{
-public $type; //cuccia chiusa, cuscino ecc
-public $height;
-public $depth;
-public $width;
-public $material;
-}
+    </footer>
+</body>
 
+</html>
