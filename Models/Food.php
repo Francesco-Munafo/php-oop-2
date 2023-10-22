@@ -7,7 +7,7 @@ class Food extends Products
     private $type;
     private $weight;
 
-    public function __construct(string $_name, float $_price, Category $_category, string $expirationDate, string $type, int $weight)
+    public function __construct(string $_name, float $_price, Category $_category, string $expirationDate, string $type, string $weight)
     {
         parent::__construct($_name, $_price, $_category);
         $this->setExpirationDate($expirationDate);

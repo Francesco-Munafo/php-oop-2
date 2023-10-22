@@ -41,34 +41,18 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 
 
 <body>
-    <header class="d-flex justify-content-center bg-warning">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+    <?php include __DIR__ . '/Partials/head.php' ?>
 
-                <div class="">
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-3">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
     <main>
+
+        <?php include __DIR__ . '/Partials/main.php' ?>
 
 
 
     </main>
-    <footer>
 
-    </footer>
+    <?php include __DIR__ . '/Partials/foot.php' ?>
+
 </body>
 
 </html>
