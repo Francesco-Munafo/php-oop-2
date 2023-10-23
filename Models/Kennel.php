@@ -43,6 +43,6 @@ class Kennels extends Products
 
     public function getInfo()
     {
-        return ('Dimen.' . $this->getDimensions() . '- Tipo' .  $this->getType() .  '- Materiali' . $this->getMaterial());
+        return ('Dimen.: ' . $this->getDimensions() . ' | Tipo: ' .  $this->getType() .  ' | Materiali: ' . $this->getMaterial());
     }
 }

@@ -9,6 +9,7 @@
                         <h4><?= $product->getName() ?></h4>
                         <h6><?= $product->getCategory()->getName(); ?></h6>
                         <h5><?= $product->getPrice() ?> €</h5>
+                        <p><?= $product->getInfo() ?></p>
 
 
 

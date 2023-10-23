@@ -10,4 +10,9 @@ class Toys extends Products
         parent::__construct($_name, $_price, $_category);
         $this->setMaterial($material);
     }
+
+    public function getInfo()
+    {
+        return ('Materiali: ' . $this->getMaterial());
+    }
 }
