@@ -1,0 +1,7 @@
+#jumbo{
+    background-image: url(../img/doggo.png);
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 600px;
+}

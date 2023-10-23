@@ -28,31 +28,18 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 */
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php include __DIR__ . '/Partials/head.php' ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
+<main>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-
-
-<body>
-    <?php include __DIR__ . '/Partials/head.php' ?>
-
-    <main>
-
-        <?php include __DIR__ . '/Partials/main.php' ?>
+    <?php include __DIR__ . '/Partials/jumbo.php' ?>
 
 
 
-    </main>
 
-    <?php include __DIR__ . '/Partials/foot.php' ?>
+</main>
 
-</body>
+<?php include __DIR__ . '/Partials/foot.php' ?>
+
 
 </html>

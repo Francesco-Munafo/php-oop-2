@@ -7,6 +7,7 @@
     <title>Pet Shop</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 
@@ -18,16 +19,17 @@
                 <div class="">
                     <ul class="navbar-nav">
                         <li class="nav-item px-3">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="/PHP/php-oop-2/">Home</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="/PHP/php-oop-2/Partials/products.php">Prodotti</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="/PHP/php-oop-2/">Contattaci</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
