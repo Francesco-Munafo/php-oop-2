@@ -1,10 +1,11 @@
 <?php
 
+require_once __DIR__ . '/../Traits/Materials.php';
 class Kennels extends Products
 {
     private $type; //cuccia chiusa, cuscino ecc
     private $dimensions;
-    private $material;
+    use Materials;
 
     public function __construct(string $_name, float $_price, Category $_category, string $_type, string $_dimensions, string $_material)
     {
@@ -14,6 +15,7 @@ class Kennels extends Products
         $this->setDimensions($_dimensions);
         $this->setMaterial($_material);
     }
+
 
     // Getters and Setters
 
@@ -27,10 +29,6 @@ class Kennels extends Products
         return $this->dimensions;
     }
 
-    public function getMaterial()
-    {
-        return $this->material;
-    }
 
 
     public function setType($type)
@@ -43,8 +41,8 @@ class Kennels extends Products
         $this->dimensions = $dimensions;
     }
 
-    public function setMaterial($material)
+    public function getInfo()
     {
-        $this->material = $material;
+        return ('Dimen.' . $this->getDimensions() . '- Tipo' .  $this->getType() .  '- Materiali' . $this->getMaterial());
     }
 }

@@ -41,7 +41,11 @@ class Products
     }
     public function setPrice($price)
     {
-        $this->price = $price;
+        if (!is_numeric($price)) {
+            throw new InvalidArgumentException('Il valore inserito non è di tipo float!');
+        } else {
+            $this->price = $price;
+        }
     }
     public function setCategory($category)
     {

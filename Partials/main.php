@@ -10,6 +10,8 @@
                         <h6><?= $product->getCategory()->getName(); ?></h6>
                         <h5><?= $product->getPrice() ?> €</h5>
 
+
+
                     </div>
                 </div>
             </div>

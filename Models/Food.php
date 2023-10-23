@@ -48,4 +48,9 @@ class Food extends Products
     {
         $this->weight = $weight;
     }
+
+    public function getInfo()
+    {
+        return ('Scad.' . $this->getExpirationDate() . '- Tipo' .  $this->getType() .  '- Peso' . $this->getWeight());
+    }
 }
